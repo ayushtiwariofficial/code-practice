@@ -61,8 +61,5 @@ public class StreamAPI {
         .forEach(System.out::println); // If we directly want to print the list without storing it in a separate list.
         // .collect(Collectors.toList());
         // System.out.print(flatList);
-
-//----------------------------------------------------------------------------------------------
-
     } 
 }

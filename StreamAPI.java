@@ -42,7 +42,8 @@ public class StreamAPI {
 // Example: For the list ["one", "two", "three", "four", "five", "six"], the output should be a map like {3=[one, two, six], 4=[four, five], 5=[three]}.
 
         List<String> stringByLength = Arrays.asList("one", "two", "three", "four", "five", "six", "sixteen");
-        Map<Integer,List<String>> groupStringsByLength = stringByLength.stream().collect(Collectors.groupingBy(word -> word.length()));
+        Map<Integer,List<String>> groupStringsByLength = stringByLength.stream().collect(Collectors
+                                                                                    .groupingBy(word -> word.length()));
         System.err.println(groupStringsByLength);
 
 //------------------------------------------------------------------------------------------------------

@@ -89,7 +89,8 @@ public class Employee{
 
 // Find out the count of male and female employees present in the organization?
     public static void getCountOfMaleFemale(List<Employee> employeeList){
-        Map<String,Long> countOfMaleFemale = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
+        Map<String,Long> countOfMaleFemale = employeeList.stream().collect(Collectors.groupingBy(Employee::getGender,
+                                                                                                Collectors.counting()));
         System.out.println(countOfMaleFemale);
     }
 }
